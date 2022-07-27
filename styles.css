@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    font-size: 62.5%;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+.card{
+    box-sizing: border-box;
+    background: hsl(216, 50%, 16%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+.containerImg{
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+img[src="./images/image-equilibrium.jpg"]{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.nftDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    margin: 2rem;
+    justify-content: space-around;
+}
+p{
+    font-size: 17px;
+    font-family: "Outfit";
+    font-weight: 600;
+}
+.nftName{
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+}
+.nftDescription{
+    margin: 2rem 0;
+    color: hsl(215, 21%, 53%);
+
+}
+
+img[src="./images/image-avatar.png"]{
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+
+}
+
+.nftValue{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.etherum{
+    display: flex;
+}
+.time{
+    display: flex;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+    margin-left: 1rem;
+}
+.date{
+    color:hsl(215, 51%, 70%);
+    margin-left: 1rem;
+}
+.nftCreator{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+.nftCreator p{
+    margin-left: 2rem;
+    font-size: 16px;
+    color:hsl(215, 51%, 70%);
+}
+.nftCreator p span{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+#line{
+    border-bottom: 1px solid hsla(215, 52%, 70%, 0.322);
+}
+
+
+.fill{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+img[src="./images/icon-view.svg"]{
+    content-visibility: hidden;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+.containerImg:hover .fill{
+    background:hsla(178, 100%, 50%, 0.342);
+    
+}
+.containerImg:hover img[src="./images/icon-view.svg"]{
+    content-visibility: visible;
+}
+
+.nftName:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+.nftCreator span:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+@media (min-width:1440px){
+    .card{
+        width: 25%;  
+    }
+    .nftDescription{
+        font-size: 22px;
+
+    }
+    .nftName{
+        font-size: 26px;
+    }
+    .nftCreator p{
+        font-size: 20px;
+    }
+    .nftCreator p span{
+        font-size: 20px;
+    }
+}
